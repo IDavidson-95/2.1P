@@ -64,8 +64,6 @@ double bmi_height(string prompt)
 }
 
 
-
-
 int main()
 {
     string name;
@@ -83,17 +81,19 @@ int main()
 
     // Ask for user input but does not store as
     // a variable as we are not outputting it anywhere.
-
     read_double("What is the value of pi: ");
+
 
     // Asks for user input and stores answer in appropriate
     // variable.
     weight = bmi_weight("How much do you weigh in kg: ");
     height = bmi_height("How tall are you in metres: ");
 
+
     // Takes stored weight and height variables and calculates
     // BMI, storing the calculation in variable bmi.
     bmi = (weight) / (height * height);    
+
 
     write_line(name);
     write("Age ");
